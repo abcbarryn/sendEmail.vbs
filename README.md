@@ -5,9 +5,9 @@ Flexible VBS script to send email.
 cscript sendEmail.vbs &lt;host&gt; &lt;port&gt; &lt;from&gt; &lt;to&gt; &lt;subject&gt; &lt;body&gt; [/Attach:file1[,file2][,filen]] [/User:username]
   [/Password:password] [/SSL:true] [/NTLM:true]
 
-  If /SSL:true is present SSL/TLS will be used.
-  SSL/TLS will only work on ports 25 and 465.
-  If /NTLM:true is present NTLM authentication will be used if a user name and password is specified.
+  If /SSL:true is present SSL/TLS will be used if the server supports .
+  SSL/TLS will only work on ports 25 and 465, read below for details.
+  If /NTLM:true is present NTLM authentication will be used if a user name and password is specified otherwise if a user name and password is given basic authentication will be used.
 
 If you use /ssl:true when connecting to a mail server providing SMTPS services on port 465, it is a very simple situation. Due to the all-or-nothing approach of the TLS encryption of the TCP/IP connection on port 465, this will work right away, or it won’t if there are configuration issues outside of the CDO library. Please note that the host name must match one of the ones in the SSL certificate.
 
