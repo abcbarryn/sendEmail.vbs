@@ -1,5 +1,5 @@
 # sendEmail.vbs
-VBS flexible VBS script to send email.
+Flexible VBS script to send email.
 
 # Usage
 cscript sendEmail.vbs &lt;host&gt; &lt;port&gt; &lt;from&gt; &lt;to&gt; &lt;subject&gt; &lt;body&gt; [/Attach:file1[,file2][,filen]] [/User:username]
