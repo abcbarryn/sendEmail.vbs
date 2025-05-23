@@ -19,5 +19,5 @@ If the server does not enforce encryption, emails will be sent, but through an u
 
 If /SSL:true is specified, the situation is much less straightforward. When beginning to send an email, CDO will evaluate the target port used for the connection.
 
-Special Behavior on Port 25
+# Special Behavior on Port 25
 If this or any script using CDO is configured for sending on port 25, if the server is configured to support STARTTLS on port 25, either optionally or mandatory, CDO will initially connect unencrypted and then initiate the encryption of the connection by sending the STARTTLS command. – This works as opportunistic TLS is intended to.
