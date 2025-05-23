@@ -2,7 +2,7 @@
 VBS flexible VBS script to send email.
 
 # Usage
-cscript sendEmail.vbs <host> <port> <from> <to> <subject> <body> [/Attach:file1[,file2][,filen]] [/User:username]
+cscript sendEmail.vbs &lt;host&gt; &lt;port&gt; &lt;from&gt; &lt;to&gt; &lt;subject&gt; &lt;body&gt; [/Attach:file1[,file2][,filen]] [/User:username]
   [/Password:password] [/SSL:true] [/NTLM:true]
 
   If /SSL:true is present SSL/TLS will be used.
